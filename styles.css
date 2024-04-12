@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('woff2');
+}
+
+body {
+    font-family: 'Outfit';
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%); 
+    font-family: Outfit;
+}
+
+#page-container{
+    max-width: 720px;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#image{
+    width: 650px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container{
+    width: 650px;
+}
+
+.container:last-child{
+    padding-bottom: 30px;
+}
+
+h1 {
+    margin-top: 0px;
+    color: hsl(24, 5%, 18%);
+    font-family: Young Serif;
+    font-weight: 400;
+}
+
+#preparation{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+    padding-left: 15px;
+}
+
+h2{
+    font-family: Young Serif;
+    font-weight: 400;
+    color:hsl(14, 45%, 36%);
+}
+
+li{
+    
+    padding-bottom: 10px;
+    list-style: none;
+
+    b{
+      font-weight: 700;  
+    }
+}
+
+#ingredients{
+    padding-left: 25px;
+}
+
+li:before{
+    content: "•";
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(0, 0%, 80%);
+    width: 650px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+    padding-left: 25px;
+}
+
+ol li {
+counter-increment: my-counter;
+margin-bottom: 8px;
+}
+
+ol li::before {
+content: counter(my-counter) ". ";
+font-weight: bold;
+margin-right: 10px;
+color:hsl(14, 45%, 36%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+}
+
+tr {
+border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+tr:last-child {
+border-bottom: none;
+}
+
+td {
+padding: 10px 0 10px 20px;
+}
+
+.value {
+color: hsl(14, 45%, 36%);
+font-weight: 600;
+}
+
+  
+
+
+
+
+
+
+
+
